@@ -1,7 +1,9 @@
 import { PostContainer } from "../post/PostContainer";
 
-export const Dashboard = () => {
+const Dashboard = () => {
     return <>
-    <PostContainer />
+        <PostContainer />
     </>
 }
+
+export default Dashboard;

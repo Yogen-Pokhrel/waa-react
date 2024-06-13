@@ -1,3 +1,7 @@
+.mainContainer{
+    max-width: 900px;
+    margin: auto;
+}
 .postContainer{
     display: flex;
     flex-direction: row;
@@ -6,7 +10,6 @@
     width: 100%;
     justify-content: center;
     align-items: center;
-    max-width: 1200px;
     flex-wrap: wrap;
 }
 
@@ -50,5 +53,72 @@
         right: 20px;
         top: 10px;
         cursor: pointer;
+    }
+}
+
+.buttonContainer{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    align-items: center;
+    gap: 25px;
+
+    h1{
+        margin: 0px;
+    }
+}
+
+.empty{
+    display: block;
+    text-align: center;
+    padding: 80px 20px;
+    border: 1px solid #555;
+}
+
+.formContainer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+    margin-top: 20px;
+
+    .formItem{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 5px;
+
+        input{
+            height: 30px;
+            padding-left: 15px;
+        }
+
+        select{
+            height: 40px;
+        }
+
+        textarea{
+            padding: 15px;
+        }
+    }
+}
+
+.buttonContainer{
+    display: flex;
+    gap: 15px;
+
+    button{
+        height: 30px;
+        width: 100px;
+    }
+    
+    .saveButton{
+        background-color: #1957bd;
     }
 }
