@@ -1,13 +1,14 @@
-import { useEffect, useState } from "react"
+import { useContext, useEffect, useState } from "react"
 import { PostType } from "../../../services/post/PostType"
 import PostService from "../../../services/post/PostService";
 import { Post } from "../../atoms/post/Post";
 import styles from "./styles.module.scss";
 import { Link } from "react-router-dom";
+import { PostContext, usePostContext } from "../../../contexts/PostContext";
 
 export const PostContainer = () => {
     const [posts, setPosts] = useState<Array<PostType>>([]);
-    const [postSelected, setSelectedPost] = useState<PostType | null>();
+    const { postSelected, setSelectedPost } = usePostContext();
 
     const getPosts = () => {
         PostService.findAll().then(data => {
